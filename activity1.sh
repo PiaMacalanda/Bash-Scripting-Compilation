@@ -10,4 +10,7 @@ read age
 echo "ENTER YOUR PROGRAM:"
 read program
 
-echo "Hello $name, this is your age - $age & your program is $program ."
+echo "Hello $name, this is your age - $age & your program is $progra."
+
+
+# git commit: git add . > git commit -m "Message here" > git push  
