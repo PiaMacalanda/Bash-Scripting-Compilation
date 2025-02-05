@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "ACTIVITY 1"
 echo "ENTER NAME:"
 read name
 
