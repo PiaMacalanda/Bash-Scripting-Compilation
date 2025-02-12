@@ -14,3 +14,5 @@ echo "Hello $name, this is your age - $age & your program is $program."
 
 
 # git commit: git add . > git commit -m "Message here" > git push  
+# chmod +x ______.sh
+# ./_______.sh
