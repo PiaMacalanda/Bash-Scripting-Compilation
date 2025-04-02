@@ -1,3 +1,5 @@
+#Repeats as long as a condition is true.
+
 #!/bin/bash
 count=1
 while [ $count -le 5 ]; do

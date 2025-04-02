@@ -1,4 +1,4 @@
-#until loop runs until condition be comes false (opposite of while).
+#Until loop runs until condition be comes false (opposite of while).
 
 #!/bin/bash
 num=1
