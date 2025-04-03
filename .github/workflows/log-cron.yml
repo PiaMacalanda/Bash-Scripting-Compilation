@@ -2,7 +2,8 @@ name: Log Date and Time
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # This means it will run every 5 minutes.
+    - cron: '*/5 * * * *'  # Runs every 5 minutes
+  workflow_dispatch:
 
 jobs:
   log_time_job:
@@ -24,4 +25,4 @@ jobs:
           git config --global user.email "actions@github.com"
           git add log.txt
           git commit -m "Update log.txt with current date and time" || echo "No changes to commit"
-          git push https://github-actions:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+          git push
