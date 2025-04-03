@@ -1,4 +1,5 @@
 # 🖥️ Bash Scripting Compilation
+![Bash GIF](https://miro.medium.com/v2/resize:fit:1358/1*hyqJzpqML8_OsEir6KCahw.gif)
 
 Welcome to the **Bash Scripting Activities** repository! This repo is a collection of Bash scripting activities for the **Operating Systems** course. It serves as a resource for learning, practicing, and testing shell commands in a Linux environment.
 
