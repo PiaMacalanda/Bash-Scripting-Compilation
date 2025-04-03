@@ -1,0 +1,27 @@
+name: Log Date and Time
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # This means it will run every 5 minutes.
+
+jobs:
+  log_time_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Make log_time.sh executable
+        run: chmod +x Log-cron/log_time.sh
+
+      - name: Run log_time.sh
+        run: ./Log-cron/log_time.sh
+
+      - name: Commit and push log.txt
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add log.txt
+          git commit -m "Update log.txt with current date and time" || echo "No changes to commit"
+          git push https://github-actions:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
