@@ -1,0 +1,27 @@
+name: Log Date and Time Every 30 Minutes (New Log File with Counter)
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Runs every 30 minutes
+
+jobs:
+  log_time_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Make log_time_30min_count.sh executable
+        run: chmod +x Log-cron/log_time_30min_count.sh
+
+      - name: Run log_time_30min_count.sh
+        run: ./Log-cron/log_time_30min_count.sh
+
+      - name: Commit and push new_log.txt and update_30min_count.txt
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add Log-cron/new_log.txt Log-cron/update_30min_count.txt
+          git commit -m "Update new_log.txt and update counter every 30 minutes" || echo "No changes to commit"
+          git push
