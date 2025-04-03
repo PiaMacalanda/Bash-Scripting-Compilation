@@ -1,7 +1,7 @@
 # 🖥️ Bash Scripting Compilation
 ![Bash GIF](https://miro.medium.com/v2/resize:fit:1358/1*hyqJzpqML8_OsEir6KCahw.gif)
 
-Welcome to the **Bash Scripting Activities** repository! This repo is a collection of Bash scripting activities for the **Operating Systems** course. It serves as a resource for learning, practicing, and testing shell commands in a Linux environment.
+Welcome to the **Bash Scripting Compilation** repository! This repo is a collection of Bash scripting activities for the **Operating Systems** course. It serves as a resource for learning, practicing, and testing shell commands in a Linux environment.
 
 ---
 
@@ -17,7 +17,7 @@ Bash scripting is a powerful tool that helps automate repetitive tasks, manage s
 
 ## 📂 Repository Structure
 ```plaintext
-📦 Bash-Scripting-Activities
+📦 Bash-Scripting-Compilation
  ┣ 📂 scripts
  ┃ ┣ 📜 script1.sh
  ┃ ┣ 📜 script2.sh
@@ -31,8 +31,8 @@ Bash scripting is a powerful tool that helps automate repetitive tasks, manage s
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/PiaMacalanda/Bash-Scripting-Activities.git
-   cd Bash-Scripting-Activies/MidtermScript
+   git clone https://github.com/PiaMacalanda/Bash-Scripting-Compilation.git
+   cd Bash-Scripting-Compilation/MidtermScript
    ```
 2. **Make a script executable**:
    ```bash
