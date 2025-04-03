@@ -18,9 +18,9 @@ Bash scripting is a powerful tool that helps automate repetitive tasks, manage s
 ## 📂 Repository Structure
 ```plaintext
 📦 Bash-Scripting-Compilation
- ┣ 📂 scripts
- ┃ ┣ 📜 script1.sh
- ┃ ┣ 📜 script2.sh
+ ┣ 📂 MidtermScript
+ ┃ ┣ 📜 activity1.sh
+ ┃ ┣ 📜 activity2.sh
  ┃ ┗ 📜 ...
  ┣ 📜 README.md  👈 (You are here!)
 ```
